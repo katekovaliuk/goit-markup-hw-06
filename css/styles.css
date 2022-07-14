@@ -623,6 +623,13 @@ address {
     border-radius: 4px;
 
     background-color: var(--footer-background-color);
+
+    transition: border var(--anim);
+}
+
+.subscribe-input:focus-within,
+.subscribe-input:hover{
+    border: 1px solid var(--secondary-text-color);
 }
 
 .subscribe-btn{
@@ -930,7 +937,8 @@ address {
     transition: border var(--anim);
 }
 
-.modal-input:focus-within{
+.modal-input:focus-within,
+.modal-input:hover{
     outline: none;
     border: 1px solid var(--accent-text-color);
 }
@@ -966,7 +974,8 @@ address {
     transition: border var(--anim);
 }
 
-.form-comment:focus-within{
+.form-comment:focus-within,
+.form-comment:hover{
     outline: none;
     border: 1px solid var(--accent-text-color)
 }
@@ -979,7 +988,8 @@ address {
     transition: fill var(--anim);
 }
 
-.form-field:focus-within > .icon-form{
+.form-field:focus-within > .icon-form,
+.form-field:hover>.icon-form{
     fill: var(--accent-text-color)
 }
 
